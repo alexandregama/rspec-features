@@ -5,7 +5,7 @@ RSpec.describe 'math calculations' do
   end
 
   it 'does more complex math' do
-    expect(10 / 5).to eq(3)
+    expect(10 / 5).to eq(2)
     expect(2 * 8).to eq(16)
   end
 end
