@@ -1,4 +1,20 @@
 RSpec.describe '#even? method' do
+  before(:context) do
+    puts 'Before context'
+  end
+
+  before(:example) do
+    puts 'Before example'
+  end
+
+  after(:example) do
+    puts 'After example'
+  end
+
+  after(:context) do
+    puts 'After context'
+  end
+
   it 'should return true if number is even' do
     expect(4.even?).to eq(true)
   end
