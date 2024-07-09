@@ -15,6 +15,7 @@ RSpec.describe Card do
   end
 
   it 'has a suit' do
-    expect(card.suit).to eq('Spades')
+    comparison = 'Spade'
+    expect(card.suit).to eq(comparison), "Hey, I expected #{comparison} but I got #{card.suit}"
   end
 end
