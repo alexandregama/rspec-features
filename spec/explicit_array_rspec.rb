@@ -13,3 +13,21 @@ RSpec.describe Array do
     expect(sally.length).to eq(2)
   end
 end
+
+RSpec.describe Hash do
+  subject(:my_custom_hash) do
+    { a:1, b: 2, c: 3 }
+  end
+
+  it 'has zero elements in the hash' do
+    expect(subject.length).to eq(3)
+  end
+end
+
+RSpec.describe Hash do
+  subject(:my_hash) { { a:1, b: 2 } }
+
+  it 'has two elements' do
+    expect(my_hash.length).to eq(2)
+  end
+end
