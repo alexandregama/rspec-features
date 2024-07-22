@@ -36,6 +36,15 @@ class Movie
       actor.light_on_fire
     end
   end
+
+  def start_shooting_twice
+    if actor.ready?
+      actor.act
+      actor.fall_of_ladder
+      actor.light_on_fire
+      actor.act
+    end
+  end
 end
 
 RSpec.describe Movie do
@@ -95,6 +104,14 @@ RSpec.describe Movie do
       expect(actor).not_to receive(:light_on_fire)
 
       movie.start_shooting
+    end
+
+    it 'expects actor to act twice' do
+      allow(actor).to receive(:ready?).and_return(true)
+
+      expect(actor).to receive(:act).twice
+
+      movie.start_shooting_twice
     end
   end
 end
