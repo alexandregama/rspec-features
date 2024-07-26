@@ -61,6 +61,14 @@ RSpec.describe 'allow method review' do
     expect(mock_array.pop).to be_nil
     expect(mock_array.pop).to be_nil
   end
+
+  it 'tests the first method in a real array' do
+    array = [10, 20, 30]
+
+    expect(array.first).to eq(10)
+    expect(array.first(1)).to eq([10])
+    expect(array.first(2)).to eq([10, 20])
+  end
 end
 
 RSpec.describe 'ApiService' do

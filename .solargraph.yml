@@ -1,0 +1,13 @@
+# .solargraph.yml
+include:
+  - "**/*.rb"
+exclude:
+  - "spec/**/*" # Add this line to exclude the spec folder from diagnostics
+require: []
+domains: []
+reporters:
+  # - rubocop
+plugins: []
+max_files: 5000
+rubocop:
+  useBundler: false
