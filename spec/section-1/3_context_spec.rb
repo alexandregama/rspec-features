@@ -1,3 +1,5 @@
+# frozen_string_literal: true
+
 RSpec.describe '#even? method' do
   before(:context) do
     puts 'Before context'

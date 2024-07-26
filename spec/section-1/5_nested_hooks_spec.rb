@@ -1,3 +1,5 @@
+# frozen_string_literal: true
+
 RSpec.describe 'Nested hooks' do
   before(:context) do
     puts 'OUTER before context'
@@ -45,3 +47,4 @@ RSpec.describe 'Nested hooks' do
     end
   end
 end
+

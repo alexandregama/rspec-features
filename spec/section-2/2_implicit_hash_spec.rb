@@ -1,3 +1,5 @@
+# frozen_string_literal: true
+
 RSpec.describe Hash do
   let(:new_hash) { {} }
   let(:other_hash) { Hash.new }

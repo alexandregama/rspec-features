@@ -1,3 +1,5 @@
+# frozen_string_literal: true
+
 RSpec.describe 'shorthand syntax' do
   subject { 5 }
 
@@ -25,3 +27,4 @@ RSpec.describe Array do
     it { is_expected.to eq([1, 2]) }
   end
 end
+
