@@ -1,0 +1,6 @@
+# config/shoryuken.yml
+concurrency: 1
+delay: 10
+queues:
+  - [customer-information-dev, 1]
+  - [customer-information-prod, 1]
