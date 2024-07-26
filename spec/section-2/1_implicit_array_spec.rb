@@ -1,3 +1,5 @@
+# frozen_string_literal: true
+
 RSpec.describe Array do
   let(:my_array) { [] }
   let(:another_array) { Array.new }

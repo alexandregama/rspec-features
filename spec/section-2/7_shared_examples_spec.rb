@@ -1,3 +1,5 @@
+# frozen_string_literal: true
+
 RSpec.shared_examples 'A Ruby object with three elements' do
   it 'returns the number of items' do
     expect(subject.length).to eq(3)

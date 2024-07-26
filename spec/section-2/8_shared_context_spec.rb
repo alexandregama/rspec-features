@@ -1,3 +1,5 @@
+# frozen_string_literal: true
+
 RSpec.shared_context 'common one' do
   before do
     @foods = []
