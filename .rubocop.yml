@@ -1,0 +1,8 @@
+# .rubocop.yml
+
+Layout/LineLength:
+  Max: 180 # Set your desired maximum line length
+
+AllCops:
+  Exclude:
+    - "spec/**/*"
