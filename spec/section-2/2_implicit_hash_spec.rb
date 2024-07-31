@@ -1,8 +1,6 @@
-# frozen_string_literal: true
-
 RSpec.describe Hash do
   let(:new_hash) { {} }
-  let(:other_hash) { Hash.new }
+  let(:other_hash) { {} }
 
   it 'should indicate an empty hash explicity - version 1' do
     expect(new_hash.length).to eq(0)
