@@ -1,5 +1,3 @@
-# frozen_string_literal: true
-
 RSpec.describe 'math calculations' do
   it 'does basic math' do
     expect(5 * 3).to eq(15)

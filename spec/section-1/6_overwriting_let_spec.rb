@@ -1,5 +1,3 @@
-# frozen_string_literal: true
-
 class ProgrammingLanguage
   attr_reader :name
 
@@ -17,7 +15,7 @@ RSpec.describe ProgrammingLanguage do
 
   context 'with no argument' do
     let(:language) { ProgrammingLanguage.new }
-    
+
     it 'should default to Ruby' do
       expect(language.name).to eq('Ruby')
     end

@@ -11,3 +11,4 @@ plugins: []
 max_files: 5000
 rubocop:
   useBundler: false
+  args: ["--config", ".rubocop.yml"]

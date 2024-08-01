@@ -3,12 +3,17 @@ class School
 
   def initialize(name)
     @name = name
-    @students = [] 
+    @students = []
   end
 end
 
 RSpec.describe School do
+  # this block of code is going to run before each example
+  # we need to use @ sign to indicate that this is an instance variable
+  # @school is not a local instance anymore. Instead it's a instance variable
+  # this is also an example of a hook
   before do
+    puts 'Running the before block for each example'
     @school = School.new('Beverly Hills')
   end
 
@@ -36,3 +41,4 @@ RSpec.describe 'School with the let method' do
     expect(school.students).to eq([])
   end
 end
+
